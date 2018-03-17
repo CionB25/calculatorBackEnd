@@ -30,4 +30,23 @@ Size.create(measurement: "3.5", price: "7.99", attachment_id: 6)
 Size.create(measurement: "3.4", price: "5.49", attachment_id: 3)
 Size.create(measurement: "1.34", price: "3.99", attachment_id: 4)
 
-Cart.create(part_id: 1, attachment_id: 1, size_id: 1)
+Cart.create(part_id: 1, attachment_id: 1, size_id: 1, count: 1)
+
+=begin
+Cart (Item)
+  part
+  attachment
+  size
+  count: 1 # cart item alone or cart and invoice?
+
+
+Invoice
+  h_m invoice_items
+        count
+        b_t item
+
+        this invoice has this item
+          M07GFM2F part
+          12a94fg attachment
+          measurement: "2.25", price: "10.99" size
+=end

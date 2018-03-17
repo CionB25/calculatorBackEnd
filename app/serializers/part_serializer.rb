@@ -1,3 +1,4 @@
 class PartSerializer < ActiveModel::Serializer
-  attributes :id, :description
+  attributes :id, :description, :attachments
+
 end

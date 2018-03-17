@@ -1,3 +1,3 @@
 class AttachmentSerializer < ActiveModel::Serializer
-  attributes :id, :name
+  attributes :id, :name, :sizes
 end
