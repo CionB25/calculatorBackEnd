@@ -1,24 +1,17 @@
-# README
+# InvoiceCreator API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
+The InvoiceCreator API is Ruby on Rails back-end for
+An invoice generating app for a mobile hose repair company. View here: https://github.com/CionB25/calculator
 
-Things you may want to cover:
+## Technology
+* Rails
+* ActiveRecord, including Serializers
 
-* Ruby version
+## Database Structure
+* Parts
+* Sizes
+* Carts
+* Attachments
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Parts, Sizes, Carts, Attachments all have their own unique routes to facilitate API calls.
